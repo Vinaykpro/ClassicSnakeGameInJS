@@ -1,0 +1,17 @@
+* {
+    margin:0;
+    padding:0;
+    outline:0;
+}
+
+canvas {
+    background-color:#202020;
+}
+
+#score {
+    position:absolute;
+    top:0;
+    left:0;
+    color:white;
+    margin:5px;
+}
