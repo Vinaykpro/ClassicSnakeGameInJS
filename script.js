@@ -248,6 +248,30 @@ gamecanvas.addEventListener("touchmove", function (e) {
         }
     }
 });
+function arrowClick(event) {
+      switch (event.key) {
+        case 'ArrowUp':
+          if(snake[0].d!=1 && snake[0].d!=3)
+          snake[0].d = 1;
+          break;
+        case 'ArrowDown':
+          if(snake[0].d!=1 && snake[0].d!=3)
+          snake[0].d = 3;
+          break;
+        case 'ArrowLeft':
+          if(snake[0].d!=2 && snake[0].d!=4)
+          snake[0].d = 4;
+          break;
+        case 'ArrowRight':
+          if(snake[0].d!=2 && snake[0].d!=4)
+          snake[0].d = 2;
+          break;
+        default:
+          break;
+    }
+}
+
+document.addEventListener('keydown', arrowClick);
 
 gamecanvas.addEventListener("touchend", function (e) {
     touchstartX = null;
